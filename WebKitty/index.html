@@ -30,7 +30,7 @@
     <link rel="stylesheet" id="color-stylesheet" href="">
     <script>
         // Prevent "Theme Flash" by applying the href before the body renders
-        var savedTheme = localStorage.getItem('theme') || "index";
+      var savedTheme = localStorage.getItem('theme') || "index";
         var savedColor = localStorage.getItem('color') || "default";
         if (savedTheme) {
             document.getElementById('main-stylesheet').setAttribute('href', './includes/css/layouts/' + savedTheme + '.css');
