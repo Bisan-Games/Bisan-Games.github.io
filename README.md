@@ -20,8 +20,7 @@ Recommends use DNS : Primary 45.56.67.85 Secondary : 00.00.00.00
 انتظر حتي يحمل الكاش علي جهازك 
 اخرج من المتصفح واعد الدخول ... واستمتع
 يفضل استخدام دي ان اس : 45.56.67.85
-
-#Credits in no particular order
+# Credits in no particular order
 
 abc: For PSFree userland and Lapse kernel exploits.
 Al-Azif: For the modular (multi-file) PSFree Lapse and AIO workaround implementations.
