@@ -9,8 +9,6 @@
 *(Formerly known as PSFree Enhanced)*
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/ArabPixel/WebKitty)](https://github.com/ArabPixel/WebKitty/issues)
-[![GitHub stars](https://img.shields.io/github/stars/ArabPixel/WebKitty)](https://github.com/ArabPixel/WebKitty/stargazers)
 
 [Features](#features) • [Firmware Compatibility](#supported-by-this-repository) • [Deployment](#deployment--hosting) • [Screenshots](#screenshots) • [Contributing](#contribution) • [Credits](#credits)
 
@@ -63,15 +61,14 @@ This table indicates firmware versions for which the *current version* of this r
 ## Deployment & Hosting
 
 ### Option 1: Access via Remote Host
-Open the PS4 web browser and navigate directly http://webkitty.arabpixel.net/
-> In case the above link can not be resolved or similarly, you may want to attempt to use the following mirror of WebKitty: arabpixel.gitlab.io/WebKitty
+Open the PS4 web browser and navigate directly http://https://bisan-games.github.io/WebKitty/
 
 ### Option 2: Local Hosting (PC / PS4 Server)
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ArabPixel/WebKitty.git
+   git clone https://github.com/bisan-games/WebKitty.git
    ```
-2. Serve the directory using any standard Web server (e.g., Nginx, Apache, Python HTTP server, or **[PS4-Websrv](https://github.com/ArabPixel/ps4-websrv)**).
+2. Serve the directory using any standard Web server (e.g., Nginx, Apache, Python HTTP server, or **[PS4-Websrv](https://bisan-games.github.io/WebKitty/)**).
 3. Open the browser on your PS4, that's it!
 
 ---
@@ -159,7 +156,7 @@ Open the PS4 web browser and navigate directly http://webkitty.arabpixel.net/
 You can contribute to WebKitty by:
 - Creating pull requests for new translations in the [`languages` folder](includes/js/languages).
 - Modifying, updating, or implementing new host features.
-- Reporting bugs or suggesting enhancements via [issues](https://github.com/ArabPixel/WebKitty/issues/new).
+- Reporting bugs or suggesting enhancements via [issues](https://bisan-games.github.io/WebKitty/issues/new).
 - In case your PR has edits inside `jailbreak.js` file, do not forget to generate `jailbreak-legacy.js` by typing
 ```
 npm install # in case you didn't install them already.
