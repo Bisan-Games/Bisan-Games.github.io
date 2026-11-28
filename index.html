@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PS4 Exploit Host by Bisan Games</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <span id="date" style="float:right; margin-right:2.25%; margin-top:18px; font-weight:bold; font-size:28px; color:white;"></span>
+  <span id="clock" style="float:left; margin-left:1.25%; margin-top:18px; font-weight:bold; font-size:28px; color:white;"></span>
+
+  <script>
+    var histlength = history.length;
+    if (histlength > 2) {
+      history.go(-(histlength - 2));
+    }
+  </script>
+
+  <h1 id="msgs">PS4 Exploit Host by Bisan Games</h1>
+  <br>
+
+  <div id="menu">
+    <h1 style="font-size: 18px; color: yellow;">Select Your Firmware</h1>
+    <button class="btn btn-multi" onmouseover="msgs.innerHTML='PS4 GoldHEN Host for 5.05 and 7.00 to 14.02 FW - (Auto Exploit Selection)'" onmouseout="msgs.innerHTML='PS4 Exploit Host by Bisan Games'" onclick="location.replace('wep/index.html')">GoldHEN Multi FW</button>
+    <button class="btn" onmouseover="msgs.innerHTML='PS4 5.05 FW Host v2.5'" onmouseout="msgs.innerHTML='PS4 Exploit Host by Bisan Games'" onclick="location.replace('505/index.html')">5.05 FW v2.5</button>
+    <a href="672goldhen/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 6.72 FW GoldHEN Host'" onmouseout="msgs.innerHTML='PS4 Exploit Host by Bisan Games'">6.72 FW GoldHEN</button></a>
+    <a href="672/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 6.72 FW Host v3.0'" onmouseout="msgs.innerHTML='PS4 Exploit Host by Bisan Games'">6.72 FW v3.0</button></a>
+    <br>
+    <a href="900goldhen/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 9.00 FW GoldHEN Host - (FontFaceSet Webkit)'" onmouseout="msgs.innerHTML='PS4 Exploit Host by Bisan Games'">9.00 FW GoldHEN</button></a>
+    <a href="900v3/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 9.00 FW Host v3.0 - (FontFaceSet Webkit)'" onmouseout="msgs.innerHTML='PS4 Exploit Host by Bisan Games'">9.00 FW v3.0</button></a>
+    <br>
+    <button class="btn" onmouseover="msgs.innerHTML='Restore a Host to User&#8217;s Guide without using DNS'" onmouseout="msgs.innerHTML='PS4 Exploit Host by Bisan Games'" onclick="location.replace('restore/index.html')">Restore Host</button>
+    <br><br><br><br><br>
+  </div>
+
+  <script>
+    function showDate() {
+      const d = new Date(), p = n => String(n).padStart(2, '0');
+      const dateEl = document.getElementById('date');
+      const clockEl = document.getElementById('clock');
+      if (dateEl) dateEl.textContent = p(d.getDate()) + '/' + p(d.getMonth() + 1) + '/' + d.getFullYear();
+      if (clockEl) clockEl.textContent = p(d.getHours()) + ':' + p(d.getMinutes());
+    }
+
+    window.addEventListener('DOMContentLoaded', function () {
+      showDate();
+      setInterval(showDate, 1000);
+    });
+
+    function load_menu() {
+      const menuEl = document.getElementById("menu");
+      if (menuEl) menuEl.style.display = "block";
+    }
+  </script>
+
+  <footer>
+    <h1 style="margin-top: 78px;">Designed by:<a href="https://bisan.pythonanywhere.com/" style="color: #f31414; margin-left: 10px; margin-right: 10px;">Bisan Games</a>A special thanks to 3loba ali alsudani.</h1>
+  </footer>
+</body>
+</html>
